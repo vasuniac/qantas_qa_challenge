@@ -24,6 +24,7 @@
 5) git push origin main
 6) Once pushed, the AWS CodeBuild job should automatically get triggered. The test report can then be seen as per below.
 
+
 ## Test Results / Report
 Once the tests are completed the results / report will be available on https://dashboard.cypress.io/projects/nv5sz7/runs
 You will have to login with your existing google or github account or any other signed up email
