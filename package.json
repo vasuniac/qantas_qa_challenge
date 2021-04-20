@@ -1,0 +1,20 @@
+{
+  "name": "qantas_qa_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open-cypress": "cypress open",
+    "api_tests": "cypress run --config 'testFiles=api/*.spec.js' --record --key ed06ca86-79a3-4131-ab96-262130a4f2ba",
+    "ui_tests": "cypress run --config 'testFiles=Booking.feature' --browser chrome --record --key ed06ca86-79a3-4131-ab96-262130a4f2ba --env weatherApiBaseUrl=https://api.weatherbit.io,phpTravelsBaseUrl=1a27b7a6751a4a10a28d21813bd66377,phpTravelsBaseUrl=https://www.phptravels.net"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.1.0",
+    "cypress-cucumber-preprocessor": "^4.0.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
